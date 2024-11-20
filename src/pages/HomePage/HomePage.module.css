@@ -1,0 +1,42 @@
+.container {
+    padding: 16px;
+}
+
+.filterButton {
+    display: block;
+    margin: 16px 0 16px auto;
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filterButton:hover {
+    background-color: #218838;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 12px;
+    }
+
+    .filterButton {
+        display: block;
+        margin: 12px auto;
+        padding: 5px 12px;
+    }
+
+    .productsGrid {
+        grid-template-columns: 1fr;
+    }
+}

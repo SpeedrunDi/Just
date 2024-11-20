@@ -1,11 +1,11 @@
-import './App.css'
+import React from 'react';
+import { FavoritesProvider } from './contexts/FavoritesContext';
+import HomePage from './pages/HomePage/HomePage.tsx';
 
-function App() {
+const App: React.FC = () => (
+  <FavoritesProvider>
+    <HomePage />
+  </FavoritesProvider>
+);
 
-  return (
-    <div>
-    </div>
-  )
-}
-
-export default App
+export default App;
